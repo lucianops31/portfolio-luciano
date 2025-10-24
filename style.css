@@ -1,0 +1,136 @@
+:root {
+  --primary: #f3ecec;
+  --bg-light: #f4f4f4;
+  --bg-dark: #1b0202;
+  --text-dark: #3a3939;
+  --text-light: #aca0a0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+header {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+nav a {
+  color: var(--text-light);
+  margin-left: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  background: linear-gradient(120deg, #3354b6 0%, #354052 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  animation: hero-slide-in 1s ease-out both;
+}
+
+.hero .Luciano {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.btn {
+  background: rgb(216, 16, 16);
+  color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--bg-dark);
+  color: white;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: red;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#contato p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
